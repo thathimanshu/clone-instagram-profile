@@ -1,0 +1,152 @@
+.profile{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-data{
+    display: flex;
+    flex-direction: row;
+    height: 270px;
+    border-bottom: 1.3px solid #1c1c1c;
+    margin-right: 4rem;
+}
+.profile-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.p-pic{
+    height: 50%;
+    border-radius: 50%;
+    padding: 4px 4px;
+    border: 2px solid #363636;    
+}
+.profile-info{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.7rem;
+}
+.line1,.username,.rest-line1{
+    display: flex;
+    color: white;
+    height: 2rem;
+    align-items: center;
+    margin-left: 0.3rem;
+    margin-right: 0.5rem;
+}
+.tick{
+    color: blue;
+    margin-left: 4px;
+}
+
+.btn{
+    display: flex;
+    border: none;
+    background-color: #363636;
+    color: white;
+    font-weight: 500;
+    font-size:0.8rem;
+    border-radius: 0.4rem;
+    align-items: center;
+    margin-right: 0.4rem;  
+    height: 1.8rem;  
+    padding: 0.9rem 0.8rem;
+}
+
+.line2{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-left: 0.55rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+.num-data{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.bold-p{
+    display: inline;
+    font-weight: 600;
+}
+
+.name-line{
+    color: white;
+    margin-left: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.line3{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 0.5rem;
+    font-size: 0.7rem;
+}
+.flag{
+    height: 0.6rem;
+}
+.bio{
+    margin: 0 0;
+    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+}
+.bio-occ{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.link{
+    color: rgb(204, 221, 256);
+    text-decoration: none;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+}
+.link span{
+    transform: rotate(-60deg);
+    font-size: 1rem;
+    margin-right: 0.4rem;
+}
+.followed-by{
+    display: flex;
+    text-wrap: nowrap;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 0.65rem;
+}
+.follow-light{
+    color: rgba(255, 255, 255,0.5);
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+.opt-tab{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.opt-tab-opt{
+    margin: 0 2rem;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 600; 
+    letter-spacing: 1.5px;
+    cursor:pointer;
+}
+.opt-tab-opt span{
+    font-size: 18px;
+    margin-right: 0.35rem;
+}
+.post-op{
+    border-top: 1px solid white;  
+}

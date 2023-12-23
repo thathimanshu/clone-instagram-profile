@@ -1,0 +1,10 @@
+.posts{
+    display: grid;
+    grid-template-columns: repeat(3,310px);
+    grid-gap: 0.25rem 0.25rem;
+}
+.post{
+    height: 310px;
+    width: 310px;
+    object-fit: cover;
+}
