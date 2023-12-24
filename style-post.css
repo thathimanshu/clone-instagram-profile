@@ -1,10 +1,39 @@
 .posts{
     display: grid;
     grid-template-columns: repeat(3,310px);
-    grid-gap: 0.25rem 0.25rem;
+    grid-gap: 0 0.25rem;
+    
 }
 .post{
+    position: relative;
+}
+.post img{
+    position: relative;
     height: 310px;
     width: 310px;
     object-fit: cover;
+    transition: opacity 0.3s;
+    cursor: pointer;
+    opacity: 1;
+}
+.hovered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex; 
+    align-items: center; 
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+
+.space{
+    margin-left: 1rem;
+    margin-right: 1rem;
 }

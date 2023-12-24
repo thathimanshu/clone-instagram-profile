@@ -1,0 +1,7 @@
+.image-div{
+    position:absolute;
+    z-index: 2;
+}
+.image{
+    max-height: 80vh;
+}

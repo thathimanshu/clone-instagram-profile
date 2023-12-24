@@ -38,6 +38,7 @@
 }
 .tick{
     color: blue;
+    fill: red;
     margin-left: 4px;
 }
 
