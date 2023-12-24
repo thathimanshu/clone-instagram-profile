@@ -16,8 +16,36 @@ function bright(){
     this.querySelector('.hovered').style.opacity = 0;
 }
 
+function showcross(){
+    let spanElement = document.createElement('span');
+    spanElement.classList.add('material-symbols-outlined');
+    spanElement.classList.add('cross');
+    spanElement.textContent = 'close';
+    document.body.appendChild(spanElement);
+
+    spanElement.addEventListener('click',removeImg);
+}
+
 function showImg(){
-    
+    let post = this.querySelector(' img');
+    let num = post.src.match(/\((\d+)\)/);
+
+    let img = document.createElement('img');
+    img.setAttribute("src", `assets/posts/postimg (${num[1]}).jpg`);
+    img.classList.add('image');
+    document.querySelector("body").appendChild(img);
+    img.style.opacity=1;
+
+    showcross();
+}
+function removeImg(){
+    let img = document.querySelector('.image');
+    img.remove();
+    removeCross();
+}
+function removeCross(){
+    let cross = document.querySelector('.cross');
+    cross.remove();
 }
 for (let i = 1; i <= 26; i++) {
   let post = document.createElement('div');
